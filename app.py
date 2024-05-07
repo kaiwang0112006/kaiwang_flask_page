@@ -44,9 +44,6 @@ def aboutme():
     return render_template(r"aboutme.html")
 
 
-
-
-
 if __name__ == "__main__":
     options = getOptions()
     print(options)
