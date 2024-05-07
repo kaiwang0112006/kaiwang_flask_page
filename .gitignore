@@ -15,9 +15,6 @@
 # Vim swap files
 *.swp
 
-## Ignore log files
-*.log
-
 ## Ignore a specific generated file
 deepspeed/git_version_info_installed.py
 
