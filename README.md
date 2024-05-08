@@ -4,4 +4,6 @@
 
 # host on [render](https://docs.render.com/deploy-flask)
 
+    gunicorn -w 4 --keep-alive 120 --timeout 120 app:app --reload
+
     https://kaiwang-flask-page.onrender.com/certificates
