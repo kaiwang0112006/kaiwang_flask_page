@@ -1,5 +1,6 @@
 Flask==2.2.2
-PyYAML==6.0.1
+PyYAML==6.0.2
+websocket_client==0.58.0
 gevent==24.2.1
 gunicorn==22.0.0
 Werkzeug==2.3.7
