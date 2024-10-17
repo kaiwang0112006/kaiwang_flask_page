@@ -7,7 +7,7 @@ from flask import *
 import argparse
 import logging, logging.config, yaml
 import time
-
+from utils.calSparkAPI import *
 ##########################################
 ## Options and defaults
 ##########################################
@@ -31,6 +31,20 @@ log
 logging.config.dictConfig(yaml.load(open(os.path.join(sys.path[0], 'logging.conf')),Loader=yaml.FullLoader))
 logger = logging.getLogger()
 
+
+def generate_caption(image):
+    input_prompt = """
+    你是一个营养专家，根据给出的图片，请分析其中的食物，给出详细的营养和卡路里分析。输出格式为：
+
+    面条 - 包含多少卡路里，有什么营养成分
+    虾 - 包含多少卡路里，有什么营养成分
+    一共多少卡路里热量。
+
+    最后，评估作为一顿正餐，是否营养均衡，给出改善建议。
+    """
+    ans = calsparkapi(image, input_prompt)
+    return ans
+
 @app.route('/' , methods=['GET'])
 def homepage():
     return render_template(r"homepage.html")
@@ -42,6 +56,26 @@ def certificates():
 @app.route('/aboutme' , methods=['GET'])
 def aboutme():
     return render_template(r"aboutme.html")
+
+@app.route('/calorie_spark' , methods=['POST'])
+def calorie_spark():
+    st = time.time()
+    # 解析请求
+    requestjson = request.get_json(force=True, silent=True)
+    logger.info(requestjson)
+
+    imagedata = requestjson["image"]
+    pred = generate_caption(imagedata)
+
+    result = {'msg': "success",
+              'status': 0,
+              'prediction': str(pred),
+              "time_used":time.time()-st}
+    logger.info(result)
+
+    resultstr = json.dumps(result, ensure_ascii=False)
+    logger.debug("response:" + resultstr)
+    return resultstr
 
 
 if __name__ == "__main__":
