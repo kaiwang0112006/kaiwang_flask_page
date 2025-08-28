@@ -8,6 +8,7 @@ import argparse
 import logging, logging.config, yaml
 import time
 from utils.calSparkAPI import *
+import os
 ##########################################
 ## Options and defaults
 ##########################################
@@ -56,6 +57,14 @@ def certificates():
 @app.route('/aboutme' , methods=['GET'])
 def aboutme():
     return render_template(r"aboutme.html")
+
+@app.route('/picbatch' , methods=['GET'])
+def picshow():
+    item = request.args.get('item', 'chuanchuan1')
+    path_all = os.path.join(r"static/images/ppt",item)
+    flist = os.listdir(path_all)
+    flist = sorted(flist)
+    return render_template(r"picbatch.html",images=flist,item=item)
 
 @app.route('/calorie_spark' , methods=['POST'])
 def calorie_spark():

@@ -1,0 +1,10 @@
+{% extends 'basepage.html' %}
+
+{% block content %}
+<div class="container">
+      <h1>{{ item }}</h1>
+		{% for img in images %}
+			<img src="/static/images/ppt/{{item}}/{{img}}" alt="{{ img }}">
+		{% endfor %}
+</div>
+{% endblock %}
