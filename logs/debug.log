@@ -1,1 +1,32 @@
-# BUG LOG
+# BUG LOG2026-02-07 21:08:14,526 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.13:8080
+2026-02-07 21:08:14,526 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-07 21:08:14,554 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-07 21:08:15,145 - werkzeug - WARNING -  * Debugger is active!
+2026-02-07 21:08:15,187 - werkzeug - INFO -  * Debugger PIN: 105-206-886
+2026-02-07 21:08:26,414 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:26] "GET / HTTP/1.1" 200 -
+2026-02-07 21:08:27,741 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-07 21:08:27,785 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2026-02-07 21:08:27,786 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/images/D3.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:27,811 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2026-02-07 21:08:27,840 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/images/R.png HTTP/1.1" 200 -
+2026-02-07 21:08:27,866 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/images/python.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:27,869 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/images/mongodb.png HTTP/1.1" 200 -
+2026-02-07 21:08:27,874 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/images/peney_150x150.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:27,915 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:27] "GET /static/font/icons.woff?79801659 HTTP/1.1" 200 -
+2026-02-07 21:08:28,417 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-07 21:08:29,521 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /certificates HTTP/1.1" 200 -
+2026-02-07 21:08:29,573 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 21:08:29,576 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "[36mGET /static/images/peney_150x150.jpg HTTP/1.1[0m" 304 -
+2026-02-07 21:08:29,589 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/udacity.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:29,589 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/mongo_python.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:29,592 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/tableau_senior.png HTTP/1.1" 200 -
+2026-02-07 21:08:29,597 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/Certificate-nebulagraph.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:29,600 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+2026-02-07 21:08:29,600 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2026-02-07 21:08:29,611 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/prompt_engineer.png HTTP/1.1" 200 -
+2026-02-07 21:08:29,614 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/InternLM-C2-SE2505.png HTTP/1.1" 200 -
+2026-02-07 21:08:29,625 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/Intel2024.jpg HTTP/1.1" 200 -
+2026-02-07 21:08:29,657 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 21:08:29] "GET /static/images/competition_xingzhi.jpg HTTP/1.1" 200 -
